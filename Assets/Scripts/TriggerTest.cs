@@ -15,6 +15,7 @@ public class TriggerTest : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		Time.timeScale = 1f;
 		timer = 1;
 	}
 

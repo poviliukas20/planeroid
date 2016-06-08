@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
+
 
 public class MenuManager : MonoBehaviour{
 
@@ -16,6 +18,10 @@ public class MenuManager : MonoBehaviour{
 		if (GvrViewer.Instance.BackButtonPressed) {
 			Application.Quit();
 		}
+	}
+
+	public void PlayScene(string scene){
+		SceneManager.LoadScene(scene);
 	}
 
 }
